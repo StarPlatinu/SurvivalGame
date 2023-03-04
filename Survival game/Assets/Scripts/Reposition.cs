@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Reposition : MonoBehaviour
 {
     void OnTriggerExit2D(Collider2D collision)
@@ -17,7 +18,29 @@ public class Reposition : MonoBehaviour
         float diffX = Mathf.Abs(playerPos.x - myPos.x);
         float diffY = Mathf.Abs(playerPos.y - myPos.y);
 
-        //Vector3 playerDir = GameManager.instance.player.transform.inputVec;
+        Vector3 playerDir = GameManager.instance.player.transform.position;
+
+
+        float dirX = playerDir.x < 0 ? -1 : 1;
+        float dirY = playerDir.y < 0 ? -1 : 1;
+
+        switch (transform.tag)
+        {
+            case "Ground":
+                if(diffX > diffY)
+                {
+                    transform.Translate(Vector3.right * dirX * 25);
+                }
+                else if (diffX < diffY)
+                {
+                    transform.Translate(Vector3.up * dirY * 25);
+                }
+                break;
+
+            case "Enemy":
+
+                break;
+        }
 
     }
 }
