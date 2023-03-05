@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Reposition : MonoBehaviour
 {
+    Player player;
     void OnTriggerExit2D(Collider2D collision)
     {
         if (!collision.CompareTag("Area"))
@@ -18,7 +19,7 @@ public class Reposition : MonoBehaviour
         float diffX = Mathf.Abs(playerPos.x - myPos.x);
         float diffY = Mathf.Abs(playerPos.y - myPos.y);
 
-        Vector3 playerDir = GameManager.instance.player.transform.position;
+        Vector3 playerDir = GameManager.instance.player.inputVec;
 
 
         float dirX = playerDir.x < 0 ? -1 : 1;
@@ -29,12 +30,13 @@ public class Reposition : MonoBehaviour
             case "Ground":
                 if(diffX > diffY)
                 {
-                    transform.Translate(Vector3.right * dirX * 25);
+                    transform.Translate(Vector3.right * dirX * 50);
                 }
                 else if (diffX < diffY)
                 {
-                    transform.Translate(Vector3.up * dirY * 25);
+                    transform.Translate(Vector3.up * dirY * 50);
                 }
+               
                 break;
 
             case "Enemy":
