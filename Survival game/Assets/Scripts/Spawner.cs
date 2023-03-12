@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+<<<<<<< HEAD
     public Transform[] spawnPoint;
     public SpawnData[] spawnData;
     int level;
@@ -42,3 +43,14 @@ public class SpawnData
     public int health;
     public float speed;
 }
+=======
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            GameManager.instance.pool.Get(1);
+        }
+    }
+}
+>>>>>>> 45a962f740fd06ca80d52dd7ebf48c3ade8ccb33

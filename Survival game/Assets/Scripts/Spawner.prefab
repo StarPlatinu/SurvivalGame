@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1 &392008402397636730
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +125,8 @@ Transform:
   m_Father: {fileID: 5585050543663059094}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> 45a962f740fd06ca80d52dd7ebf48c3ade8ccb33
 --- !u!1 &5238415700832184772
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +155,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9245789, y: 0.92022943, z: 1}
   m_ConstrainProportionsScale: 0
+<<<<<<< HEAD
   m_Children:
   - {fileID: 6505289486958058465}
   - {fileID: 5288136176178851435}
@@ -165,6 +169,9 @@ Transform:
   - {fileID: 5945068977794060392}
   - {fileID: 5314145557021196959}
   - {fileID: 7460558610607986786}
+=======
+  m_Children: []
+>>>>>>> 45a962f740fd06ca80d52dd7ebf48c3ade8ccb33
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -180,6 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ac85207ca8cbd40944a17fb345b31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   spawnPoint: []
   spawnData:
   - spriteType: 0
@@ -438,3 +446,5 @@ Transform:
   m_Father: {fileID: 5585050543663059094}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> 45a962f740fd06ca80d52dd7ebf48c3ade8ccb33

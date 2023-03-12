@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float speed;
+<<<<<<< HEAD
     public float health;
     public float maxHealth;
     public RuntimeAnimatorController[] animCon;
@@ -15,11 +16,21 @@ public class Enemy : MonoBehaviour
 
     Rigidbody2D rigid;
     Animator anim;
+=======
+    public Rigidbody2D target;
+
+    bool isLive = true;
+
+    Rigidbody2D rigid;
+>>>>>>> 45a962f740fd06ca80d52dd7ebf48c3ade8ccb33
     SpriteRenderer spriter;
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
+<<<<<<< HEAD
         anim= GetComponent<Animator>();
+=======
+>>>>>>> 45a962f740fd06ca80d52dd7ebf48c3ade8ccb33
         spriter = GetComponent<SpriteRenderer>();
     }
 
@@ -43,6 +54,7 @@ public class Enemy : MonoBehaviour
     void OnEnable()
     {
         target = GameManager.instance.player.GetComponent<Rigidbody2D>();
+<<<<<<< HEAD
         isLive = true;
         health = maxHealth;
     }
@@ -52,5 +64,7 @@ public class Enemy : MonoBehaviour
         speed = data.speed;
         maxHealth = data.health;
         health = data.health;
+=======
+>>>>>>> 45a962f740fd06ca80d52dd7ebf48c3ade8ccb33
     }
 }
