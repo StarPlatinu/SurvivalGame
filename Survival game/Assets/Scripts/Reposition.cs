@@ -6,6 +6,13 @@ using UnityEngine;
 public class Reposition : MonoBehaviour
 {
     Player player;
+    Collider2D coll;
+    public float scaleMultiplier = 2f;
+
+    void Awake()
+    {
+        coll = GetComponent<Collider2D>();
+    }
     void OnTriggerExit2D(Collider2D collision)
     {
         if (!collision.CompareTag("Area"))
@@ -30,17 +37,23 @@ public class Reposition : MonoBehaviour
             case "Ground":
                 if(diffX > diffY)
                 {
-                    transform.Translate(Vector3.right * dirX * 55);
+                    transform.Translate(Vector3.right * dirX * 40);
+                    transform.localScale *= scaleMultiplier;
+
                 }
                 else if (diffX < diffY)
                 {
-                    transform.Translate(Vector3.up * dirY * 55);
+                    transform.Translate(Vector3.up * dirY * 40);
+                    transform.localScale *= scaleMultiplier;
                 }
                
                 break;
 
             case "Enemy":
-
+                if (coll.enabled)
+                {
+                    transform.Translate(playerDir * 20 + new Vector3(Random.Range(-3f,3f), Random.Range(-3f, 3f), 0f));
+                }
                 break;
         }
 
