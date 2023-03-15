@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
         health = maxHealth;
     }
     //buidang update code
-    //buidang comment
+
     public void Init(SpawnData data)
     {
         anim.runtimeAnimatorController = animCon[data.spriteType];
