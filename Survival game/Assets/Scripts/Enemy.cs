@@ -66,13 +66,14 @@ public class Enemy : MonoBehaviour
 
         if(health > 0)
         {
-
+            anim.SetTrigger("Hit");
         }
         else
         {
             Dead();
         }
     }
+
 
     void Dead()
     {
