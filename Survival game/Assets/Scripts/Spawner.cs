@@ -34,7 +34,8 @@ public class Spawner : MonoBehaviour
         enemy.GetComponent<Enemy>().Init(spawnData[level]);
     }
 }
-
+//buidang update code
+//buidang comment
 [System.Serializable]
 public class SpawnData
 {
