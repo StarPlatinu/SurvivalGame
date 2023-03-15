@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
         isLive = true;
         health = maxHealth;
     }
-
+    //buidang update code
     public void Init(SpawnData data)
     {
         anim.runtimeAnimatorController = animCon[data.spriteType];
