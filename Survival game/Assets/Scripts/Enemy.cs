@@ -29,10 +29,11 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!isLive || anim.GetCurrentAnimatorStateInfo(0).IsName("Hit")) {
-              return;//hit day lui enemy
+        if (!isLive || anim.GetCurrentAnimatorStateInfo(0).IsName("Hit"))
+        {
+            return;//hit day lui enemy
         }
-            
+
 
         Vector2 dirVec = target.position - rigid.position;
         Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
@@ -75,7 +76,7 @@ public class Enemy : MonoBehaviour
         health -= collision.GetComponent<Bullet>().damage;
         StartCoroutine(KnockBack());
 
-        if(health > 0)
+        if (health > 0)
         {
             anim.SetTrigger("Hit");
         }
@@ -89,20 +90,21 @@ public class Enemy : MonoBehaviour
             GameManager.instance.kill++;
             GameManager.instance.GetExp();
         }
- 
-    IEnumerator KnockBack()
-    {
-        yield return null;
-        Vector3 playerPos = GameManager.instance.player.transform.position;
-        Vector3 dirVec = transform.position - playerPos;
-        rigid.AddForce(dirVec.normalized * 3, ForceMode2D.Impulse);
 
-    }
+        IEnumerator KnockBack()
+        {
+            yield return null;
+            Vector3 playerPos = GameManager.instance.player.transform.position;
+            Vector3 dirVec = transform.position - playerPos;
+            rigid.AddForce(dirVec.normalized * 3, ForceMode2D.Impulse);
+
+        }
 
 
-    void Dead()
-    {
-        gameObject.SetActive(false);
+        void Dead()
+        {
+            gameObject.SetActive(false);
 
+        }
     }
 }
