@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        level = Mathf.Min(Mathf.FloorToInt(GameManager.instance.gameTime / 10f));
+        level = Mathf.Min(Mathf.FloorToInt(GameManager.instance.gameTime / 15f));
         if (timer > spawnData[level].spawnTime)
         {
             
@@ -34,7 +34,8 @@ public class Spawner : MonoBehaviour
         enemy.GetComponent<Enemy>().Init(spawnData[level]);
     }
 }
-
+//buidang update code
+//buidang comment
 [System.Serializable]
 public class SpawnData
 {

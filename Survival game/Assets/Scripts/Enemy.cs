@@ -58,6 +58,7 @@ public class Enemy : MonoBehaviour
         anim.SetBool("Dead", false);
         health = maxHealth;
     }
+    //buidang update code
 
     public void Init(SpawnData data)
     {
@@ -88,8 +89,7 @@ public class Enemy : MonoBehaviour
             GameManager.instance.kill++;
             GameManager.instance.GetExp();
         }
-    }
-
+ 
     IEnumerator KnockBack()
     {
         yield return null;
@@ -98,6 +98,7 @@ public class Enemy : MonoBehaviour
         rigid.AddForce(dirVec.normalized * 3, ForceMode2D.Impulse);
 
     }
+
 
     void Dead()
     {
