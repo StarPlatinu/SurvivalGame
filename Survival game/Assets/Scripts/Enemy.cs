@@ -82,6 +82,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
+            Dead();
             isLive = false;
             coll.enabled = false;
             rigid.simulated = false;
