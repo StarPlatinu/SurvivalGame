@@ -82,7 +82,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            Dead();
+            
             isLive = false;
             coll.enabled = false;
             rigid.simulated = false;
@@ -92,20 +92,21 @@ public class Enemy : MonoBehaviour
             GameManager.instance.GetExp();
         }
 
-        IEnumerator KnockBack()
-        {
+        
+    }
+    IEnumerator KnockBack()
+    {
             yield return null;
             Vector3 playerPos = GameManager.instance.player.transform.position;
             Vector3 dirVec = transform.position - playerPos;
             rigid.AddForce(dirVec.normalized * 3, ForceMode2D.Impulse);
 
-        }
+    }
 
 
-        void Dead()
-        {
+    void Dead()
+    {
             gameObject.SetActive(false);
 
-        }
     }
 }
