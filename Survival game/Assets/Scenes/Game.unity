@@ -444,7 +444,7 @@ Transform:
   m_GameObject: {fileID: 173552859}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10, y: -10, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 184294407}
@@ -481,21 +481,9 @@ CompositeCollider2D:
   m_EdgeRadius: 0
   m_ColliderPaths:
   - m_Collider: {fileID: 173552863}
-    m_ColliderPaths:
-    - - X: 200000000
-        Y: 100000000
-      - X: -200000000
-        Y: 100000000
-      - X: -200000000
-        Y: -100000000
-      - X: 200000000
-        Y: -100000000
+    m_ColliderPaths: []
   m_CompositePaths:
-    m_Paths:
-    - - {x: 19.999971, y: -10}
-      - {x: 19.999971, y: 10}
-      - {x: -20, y: 9.99997}
-      - {x: -19.999971, y: -10}
+    m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!19719996 &173552863
@@ -5119,7 +5107,7 @@ Transform:
   m_GameObject: {fileID: 410041912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10, y: -10, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 184294407}
@@ -5144,21 +5132,9 @@ CompositeCollider2D:
   m_EdgeRadius: 0
   m_ColliderPaths:
   - m_Collider: {fileID: 410041915}
-    m_ColliderPaths:
-    - - X: 200000000
-        Y: 100000000
-      - X: -200000000
-        Y: 100000000
-      - X: -200000000
-        Y: -100000000
-      - X: 200000000
-        Y: -100000000
+    m_ColliderPaths: []
   m_CompositePaths:
-    m_Paths:
-    - - {x: 19.999971, y: -10}
-      - {x: 19.999971, y: 10}
-      - {x: -20, y: 9.99997}
-      - {x: -19.999971, y: -10}
+    m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!19719996 &410041915
@@ -12048,7 +12024,7 @@ Transform:
   m_GameObject: {fileID: 1570485191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10, y: 10, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 184294407}
@@ -12085,21 +12061,9 @@ CompositeCollider2D:
   m_EdgeRadius: 0
   m_ColliderPaths:
   - m_Collider: {fileID: 1570485195}
-    m_ColliderPaths:
-    - - X: 200000000
-        Y: 100000000
-      - X: -200000000
-        Y: 100000000
-      - X: -200000000
-        Y: -100000000
-      - X: 200000000
-        Y: -100000000
+    m_ColliderPaths: []
   m_CompositePaths:
-    m_Paths:
-    - - {x: 19.999971, y: -10}
-      - {x: 19.999971, y: 10}
-      - {x: -20, y: 9.99997}
-      - {x: -19.999971, y: -10}
+    m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!19719996 &1570485195
@@ -16939,7 +16903,7 @@ Transform:
   m_GameObject: {fileID: 1916809091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10, y: 10, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 184294407}
@@ -16976,21 +16940,9 @@ CompositeCollider2D:
   m_EdgeRadius: 0
   m_ColliderPaths:
   - m_Collider: {fileID: 1916809095}
-    m_ColliderPaths:
-    - - X: 200000000
-        Y: 100000000
-      - X: -200000000
-        Y: 100000000
-      - X: -200000000
-        Y: -100000000
-      - X: 200000000
-        Y: -100000000
+    m_ColliderPaths: []
   m_CompositePaths:
-    m_Paths:
-    - - {x: 19.999971, y: -10}
-      - {x: 19.999971, y: 10}
-      - {x: -20, y: 9.99997}
-      - {x: -19.999971, y: -10}
+    m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!19719996 &1916809095
