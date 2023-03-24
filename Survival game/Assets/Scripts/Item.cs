@@ -30,7 +30,7 @@ public class Item : MonoBehaviour
     private void LateUpdate()
     {
 
-        textLevel.text = "Lv." + (level + 1);
+        textLevel.text = "Attack";
       
     }
 
@@ -54,8 +54,8 @@ public class Item : MonoBehaviour
                     float nextDamage = data.baseDamage;
                     int nextCount = 0;
 
-                    nextDamage += data.baseDamage * data.damages[level];
-                    nextCount += data.counts[level];
+                    nextDamage += data.baseDamage * data.damages[1];
+                    nextCount += data.counts[1];
 
                     weapon.LevelUp(nextDamage, nextCount);
                                   
@@ -84,9 +84,9 @@ public class Item : MonoBehaviour
 
         
 
-        if (level == data.damages.Length)
-        {
-            GetComponent<Button>().interactable = false;
-        }
+        //if (level == data.damages.Length)
+        //{
+        //    GetComponent<Button>().interactable = false;
+        //}
     }
 }
