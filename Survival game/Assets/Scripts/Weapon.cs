@@ -86,8 +86,9 @@ public class Weapon : MonoBehaviour
 
     void Batch()
     {
-        for (int index = 0; index < count; index++)
-        {
+      //  for (int index = 0; index < count; index++)
+            for (int index = 0; index < count; index++)
+            {
             Transform bullet;
             if(index < transform.childCount)
             {

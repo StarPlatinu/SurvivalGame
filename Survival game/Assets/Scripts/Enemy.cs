@@ -12,7 +12,6 @@ public class Enemy : MonoBehaviour
 
     bool isLive;
     Animator anim;
-
     Collider2D coll;
     Rigidbody2D rigid;
     SpriteRenderer spriter;
